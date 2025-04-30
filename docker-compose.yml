@@ -17,6 +17,7 @@ services:
       ONLINE_MODE: false
       ICON: ./server-icon.png
     volumes:
+      - ./server-icon.png:/server-icon.png:ro
       - ./modpack:/modpack:ro
       - ./data:/data
     ports:
