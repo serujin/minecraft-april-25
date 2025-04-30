@@ -1,0 +1,17 @@
+services:
+  mc:
+    tty: true
+    stdin_open: true
+    image: itzg/minecraft-server
+    environment:
+      EULA: true
+      MODPACK_PLATFORM: AUTO_CURSEFORGE
+      SEED: 271983547940499840
+      CF_API_KEY: ${CF_API_KEY}
+      CF_MODPACK_MANIFEST: /modpack/manifest.json
+      CF_SLUG: "custom"
+    volumes:
+      - ./modpack:/modpack:ro
+      - ./data:/data
+    ports:
+      - "25565:25565"
