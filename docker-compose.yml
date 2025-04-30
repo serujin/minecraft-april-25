@@ -14,7 +14,7 @@ services:
       VERSION: "1.20.1"
       MOTD: "&eGracias SergioElLitri!"
       SNOOPER_ENABLED: false
-      ONLINE_MODE: false
+      ONLINE_MODE: true
       ICON: /server-icon.png
     volumes:
       - ./server-icon.png:/server-icon.png:ro
