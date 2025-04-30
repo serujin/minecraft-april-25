@@ -24,8 +24,3 @@ services:
       - "25565:25565"
 volumes:
   mc-data:
-    driver: local
-    driver_opts:
-      type: none
-      device: /data
-      o: bind
