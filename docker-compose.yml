@@ -16,10 +16,14 @@ services:
       MOTD: "Gracias SergioElLitri!"
       SNOOPER_ENABLED: false
       ONLINE_MODE: true
-      ICON: /server-icon.png
+      ICON: https://raw.githubusercontent.com/serujin/minecraft-april-25/master/images/server-icon.png
     volumes:
-      - ./server-icon.png:/server-icon.png:ro
-      - ./modpack:/modpack:ro
-      - ./data:/data
+      - modpack:/modpack:ro
+      - data:/data
     ports:
       - "25565:25565"
+volumes:
+  data:
+    driver: local
+  modpack:
+    driver: local
