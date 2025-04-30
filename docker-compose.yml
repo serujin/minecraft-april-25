@@ -18,7 +18,10 @@ services:
       ONLINE_MODE: true
       ICON: https://raw.githubusercontent.com/serujin/minecraft-april-25/master/images/server-icon.png
     volumes:
-      - ../files/modpack:/modpack:ro
-      - ../files/data:/data
+      - modpack:/modpack:ro
+      - mc-data:/data
     ports:
       - "25565:25565"
+volumes:
+  mc-data:
+  modpack:
