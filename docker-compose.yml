@@ -7,7 +7,7 @@ services:
       EULA: true
       MODPACK_PLATFORM: AUTO_CURSEFORGE
       SEED: "271983547940499847"
-      VIEW_DISTANCE: 32
+      VIEW_DISTANCE: 10
       CF_API_KEY: ${CF_API_KEY}
       CF_MODPACK_MANIFEST: /modpack/manifest.json
       MEMORY: 12G
