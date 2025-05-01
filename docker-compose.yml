@@ -19,6 +19,7 @@ services:
       MAX_MEMORY: 15G
       GUI: false
       USE_AIKAR_FLAGS: true
+      SPAWN_PROTECTION: 0
       ICON: https://raw.githubusercontent.com/serujin/minecraft-april-25/master/images/server-icon.png
     volumes:
       - ./modpack:/modpack
